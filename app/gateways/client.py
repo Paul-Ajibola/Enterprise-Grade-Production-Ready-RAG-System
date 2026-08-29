@@ -11,6 +11,8 @@ from app.config import settings
 #   - Cache: semantic mode (requires )
 #   - Retry: 2 attempts on rate limit
 
+
+# set up the gateway configuration
 GATEWAY_CONFIG = {
     "strategy": {"mode": "fallback"},
     "cache": {"mode": "simple"},
