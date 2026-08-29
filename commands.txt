@@ -1,0 +1,18 @@
+# to ingest the true data, you say:
+python -m app.ingestion.processor DATA/true_data true
+
+
+# to ingest the noisy data, you say:
+python -m app.ingestion.processor DATA/noisy noisy
+
+
+
+
+Benchmark to evaluate the LLM
+- artificialintelligence.ai\models
+- huggingface benchmarks
+On these sites, you can see the LLM evaluations
+
+
+
+
