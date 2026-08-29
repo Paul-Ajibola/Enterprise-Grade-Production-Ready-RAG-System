@@ -6,6 +6,7 @@ from langchain_groq import ChatGroq
 # Direct Groq call - the LLM Gateway (Portkey routing/fallback/cache)
 llm = ChatGroq(api_key=settings.GROQ_API_KEY, model=settings.GROQ_MODEL, temperature=0.7)
 
+# function to plan node
 def planner_node(state: AgentState):
     """The Planner determines if a search is 
     needed based on the ENTIRE conversation"""

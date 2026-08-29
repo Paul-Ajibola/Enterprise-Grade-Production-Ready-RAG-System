@@ -5,6 +5,7 @@ from app.gateway.client import get_langchain_llm
 # Direct Groq call - the LLM Gateway (Portkey routing/fallback/cache)
 llm = get_langchain_llm(feature="planner")
 
+# function to plan node
 def planner_node(state: AgentState):
     """The Planner determines if a search is 
     needed based on the ENTIRE conversation"""

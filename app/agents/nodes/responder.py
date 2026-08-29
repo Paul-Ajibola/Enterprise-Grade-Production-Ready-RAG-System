@@ -7,6 +7,7 @@ from langchain_groq import ChatGroq
 # (Portkey routing/fallback/caching) arrives in a later stage
 llm = ChatGroq(api_key=settings.GROQ_API_KEY, model=settings.GROQ_MODEL, temperature=0.1)
 
+# function to generate node
 def generate_node(state: AgentState):
     """
     Synthesizes a response using both Documentation Context AND Conversation History

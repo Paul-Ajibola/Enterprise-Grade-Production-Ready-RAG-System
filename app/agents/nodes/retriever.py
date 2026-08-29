@@ -6,6 +6,8 @@ from app.services.retrieval.ranking_service import rerank_documents
 # Before importing the retriever, you import the reranker
 # Retriever node only works when the query is technical in nature
 
+
+# function to retrieve node
 def retrieve_node(state: AgentState):
     """
     Performs vector search and semantic reranking for technical queries.
