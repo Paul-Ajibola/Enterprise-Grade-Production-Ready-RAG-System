@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+# set up class for the API keys present
 class Settings:
     # ----- GEMINI EMBEDDINGS ----
     GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
