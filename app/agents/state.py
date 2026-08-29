@@ -2,6 +2,8 @@ from typing import TypedDict, List, Annotated
 import operator
 
 
+
+# define the Agent state using TypedDict
 class AgentState(TypedDict):
     # Using Annotated with operator.add ensures that messages
     # are appended to the history rather than replaced.
